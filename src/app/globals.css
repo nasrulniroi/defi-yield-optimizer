@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{--bg:#0f0f23;--fg:#e2e8f0;--primary:#818cf8;--surface:#1a1a2e;--surface2:#252540;--border:#2d2d4a;--muted:#94a3b8;--ok:#34d399;--warn:#fbbf24;--err:#f87171}
+body{background:var(--bg);color:var(--fg);font-family:Inter,sans-serif}
+.card{@apply bg-[var(--surface)] rounded-xl border border-[var(--border)] p-6}
+.btn{@apply bg-[var(--primary)] hover:bg-[var(--primary)]/80 text-white px-4 py-2 rounded-lg transition-colors}

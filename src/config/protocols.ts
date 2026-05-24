@@ -1,0 +1,52 @@
+export const PROTOCOL_CONFIG = {
+  AAVE: {
+    id: 'aave-v3',
+    name: 'Aave V3',
+    logo: '/icons/aave.svg',
+    category: 'lending' as const,
+    chains: ['ethereum', 'polygon', 'arbitrum', 'optimism', 'avalanche'],
+    website: 'https://aave.com',
+    docs: 'https://docs.aave.com',
+    github: 'https://github.com/aave',
+  },
+  COMPOUND: {
+    id: 'compound-v3',
+    name: 'Compound V3',
+    logo: '/icons/compound.svg',
+    category: 'lending' as const,
+    chains: ['ethereum', 'polygon', 'base', 'arbitrum'],
+    website: 'https://compound.finance',
+    docs: 'https://docs.compound.finance',
+    github: 'https://github.com/compound-finance',
+  },
+  YEARN: {
+    id: 'yearn-finance',
+    name: 'Yearn Finance',
+    logo: '/icons/yearn.svg',
+    category: 'yield' as const,
+    chains: ['ethereum', 'fantom'],
+    website: 'https://yearn.fi',
+    docs: 'https://docs.yearn.fi',
+    github: 'https://github.com/yearn',
+  },
+  CONVEX: {
+    id: 'convex-finance',
+    name: 'Convex Finance',
+    logo: '/icons/convex.svg',
+    category: 'yield' as const,
+    chains: ['ethereum'],
+    website: 'https://convexfinance.com',
+    docs: 'https://docs.convexfinance.com',
+    github: 'https://github.com/convex-eth',
+  },
+} as const;
+
+export const CHAIN_CONFIG = {
+  ethereum: { id: 1, name: 'Ethereum', symbol: 'ETH', explorer: 'https://etherscan.io' },
+  polygon: { id: 137, name: 'Polygon', symbol: 'MATIC', explorer: 'https://polygonscan.com' },
+  arbitrum: { id: 42161, name: 'Arbitrum', symbol: 'ETH', explorer: 'https://arbiscan.io' },
+  optimism: { id: 10, name: 'Optimism', symbol: 'ETH', explorer: 'https://optimistic.etherscan.io' },
+  base: { id: 8453, name: 'Base', symbol: 'ETH', explorer: 'https://basescan.org' },
+  avalanche: { id: 43114, name: 'Avalanche', symbol: 'AVAX', explorer: 'https://snowtrace.io' },
+  fantom: { id: 250, name: 'Fantom', symbol: 'FTM', explorer: 'https://ftmscan.com' },
+} as const;

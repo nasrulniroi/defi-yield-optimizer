@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports: ['3000:3000']
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: yield_optimizer
+      POSTGRES_PASSWORD: postgres
